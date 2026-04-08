@@ -48,25 +48,25 @@
 
 <script>
     const quizData = [
-        { q: "O que é um algoritmo?", a: "B", options: { A: "Uma linguagem de baixo nível.", B: "Uma sequência finita de instruções, claras e sem ambiguidade.", C: "Um compilador.", D: "Um método para descobrir senhas." }, exp: "Um algoritmo é a lógica passo a passo antes do código." },
-        { q: "Quais são as quatro etapas de George Polya?", a: "A", options: { A: "Entender, Planejar, Executar, Verificar.", B: "Analisar, Codificar, Testar, Compilar.", C: "Início, Variáveis, Processamento, Fim.", D: "Linguagem Natural, Fluxograma, Pseudocódigo, Código C." }, exp: "Polya foca no processo cognitivo de resolução." },
-        { q: "Qual a desvantagem da Linguagem Natural?", a: "C", options: { A: "Desenhos difíceis.", B: "Não pode ser usada no dia a dia.", C: "Alto risco de ambiguidades.", D: "Só lida por compiladores." }, exp: "A língua falada depende muito do contexto e interpretação." },
-        { q: "Qual norma padroniza fluxogramas?", a: "C", options: { A: "ISO 9001", B: "ABNT NBR 14724", C: "ISO 5807.", D: "IEEE 754" }, exp: "A ISO 5807 define os símbolos universais como o losango para decisão." },
-        { q: "No desafio do sanduíche de Josh Darnit, as crianças são:", a: "C", options: { A: "Computador", B: "Programa", C: "Programador", D: "Sistema Operacional" }, exp: "O programador dá ordens, o computador executa literalmente." },
-        { q: "Qual identificador em C é VÁLIDO?", a: "C", options: { A: "2metros", B: "peso do aluno", C: "_teste", D: "int" }, exp: "Variáveis podem começar com '_' mas não com números ou ter espaços." },
-        { q: "Diferenciar maiúsculas de minúsculas é:", a: "A", options: { A: "Case Sensitive.", B: "Type Casting.", C: "Overloading.", D: "Static" }, exp: "C trata 'Soma' e 'soma' como duas variáveis diferentes." },
-        { q: "Tipo de dado para 4 bytes decimais:", a: "D", options: { A: "int", B: "char", C: "double", D: "float." }, exp: "Float é precisão simples (4 bytes), Double é precisão dupla (8 bytes)." },
-        { q: "Declaração correta de string para 'MARIA':", a: "B", options: { A: "string nome = 'MARIA'", B: "char nome[6];", C: "char nome;", D: "varchar nome" }, exp: "Precisamos de 5 espaços para as letras + 1 para o caractere nulo '\\0'." },
-        { q: "Representação de 'Salto de linha':", a: "C", options: { A: "\\t", B: "\\b", C: "\\n.", D: "\\0" }, exp: "\\n (newline) move o cursor para a próxima linha." },
-        { q: "Evitar problemas de acentuação:", a: "B", options: { A: "printf()", B: "setlocale().", C: "scanf()", D: "include()" }, exp: "A função setlocale ajusta o software à cultura/idioma do usuário." },
-        { q: "Resultado de 30 / 4 em C (inteiros):", a: "C", options: { A: "7.5", B: "8", C: "7.", D: "2" }, exp: "Na divisão entre inteiros, a linguagem C descarta a parte decimal." },
-        { q: "Se n=5, o que é x = n++?", a: "B", options: { A: "6", B: "5.", C: "0", D: "4" }, exp: "Pós-incremento: primeiro atribui o valor original, depois soma 1." },
-        { q: "Operador 'Diferente' em C:", a: "C", options: { A: "<>", B: "==", C: "!=", D: "!==" }, exp: "O símbolo '!' representa negação." },
-        { q: "Resultado de FALSO || FALSO:", a: "B", options: { A: "1", B: "0.", C: "Nulo", D: "Verdadeiro" }, exp: "O operador OU só é verdadeiro se pelo menos um lado for verdadeiro." },
-        { q: "Formatação para String no printf:", a: "D", options: { A: "%d", B: "%f", C: "%c", D: "%s." }, exp: "%s vem de 'string', %d de 'decimal' e %f de 'float'." },
-        { q: "Operador de endereço no scanf:", a: "A", options: { A: "&.", B: "*", C: "%", D: "#" }, exp: "O '&' diz ao scanf em qual endereço de memória salvar o dado." },
-        { q: "Melhor para múltiplos testes de valor exato:", a: "C", options: { A: "for", B: "while", C: "switch.", D: "return" }, exp: "O switch é ideal para menus ou testes de valores constantes." },
-        { q: "Qual resolvido primeiro na precedência?", a: "A", options: { A: "Incremento (++).", B: "Atribuição (=)", C: "Multiplicação (*)", D: "Adição (+)" }, exp: "Operadores unários (++ , --) têm prioridade sobre aritméticos." }
+        { q: "O que é um algoritmo?", a: "B", options: { A: "Uma linguagem de baixo nível", B: "Uma sequência finita de instruções, claras e sem ambiguidade", C: "Um compilador", D: "Um método para descobrir senhas" }, exp: "Um algoritmo é a lógica passo a passo antes do código." },
+        { q: "Quais são as quatro etapas de George Polya?", a: "A", options: { A: "Entender, Planejar, Executar, Verificar", B: "Analisar, Codificar, Testar, Compilar", C: "Início, Variáveis, Processamento, Fim", D: "Linguagem Natural, Fluxograma, Pseudocódigo, Código C." }, exp: "Polya foca no processo cognitivo de resolução." },
+        { q: "Qual a desvantagem da Linguagem Natural?", a: "C", options: { A: "Desenhos difíceis", B: "Não pode ser usada no dia a dia", C: "Alto risco de ambiguidades", D: "Só lida por compiladores" }, exp: "A língua falada depende muito do contexto e interpretação" },
+        { q: "Qual norma padroniza fluxogramas?", a: "C", options: { A: "ISO 9001", B: "ABNT NBR 14724", C: "ISO 5807", D: "IEEE 754" }, exp: "A ISO 5807 define os símbolos universais como o losango para decisão" },
+        { q: "No desafio do sanduíche de Josh Darnit, as crianças são:", a: "C", options: { A: "Computador", B: "Programa", C: "Programador", D: "Sistema Operacional" }, exp: "O programador dá ordens, o computador executa literalmente" },
+        { q: "Qual identificador em C é VÁLIDO?", a: "C", options: { A: "2metros", B: "peso do aluno", C: "_teste", D: "int" }, exp: "Variáveis podem começar com '_' mas não com números ou ter espaços" },
+        { q: "Diferenciar maiúsculas de minúsculas é:", a: "A", options: { A: "Case Sensitive", B: "Type Casting", C: "Overloading", D: "Static" }, exp: "C trata 'Soma' e 'soma' como duas variáveis diferentes" },
+        { q: "Tipo de dado para 4 bytes decimais:", a: "D", options: { A: "int", B: "char", C: "double", D: "float" }, exp: "Float é precisão simples (4 bytes), Double é precisão dupla (8 bytes)" },
+        { q: "Declaração correta de string para 'MARIA':", a: "B", options: { A: "string nome = 'MARIA'", B: "char nome[6];", C: "char nome;", D: "varchar nome" }, exp: "Precisamos de 5 espaços para as letras + 1 para o caractere nulo '\\0'" },
+        { q: "Representação de 'Salto de linha':", a: "C", options: { A: "\\t", B: "\\b", C: "\\n", D: "\\0" }, exp: "\\n (newline) move o cursor para a próxima linha" },
+        { q: "Evitar problemas de acentuação:", a: "B", options: { A: "printf()", B: "setlocale()", C: "scanf()", D: "include()" }, exp: "A função setlocale ajusta o software à cultura/idioma do usuário" },
+        { q: "Resultado de 30 / 4 em C (inteiros):", a: "C", options: { A: "7.5", B: "8", C: "7", D: "2" }, exp: "Na divisão entre inteiros, a linguagem C descarta a parte decimal" },
+        { q: "Se n=5, o que é x = n++?", a: "B", options: { A: "6", B: "5", C: "0", D: "4" }, exp: "Pós-incremento: primeiro atribui o valor original, depois soma 1" },
+        { q: "Operador 'Diferente' em C:", a: "C", options: { A: "<>", B: "==", C: "!=", D: "!==" }, exp: "O símbolo '!' representa negação" },
+        { q: "Resultado de FALSO || FALSO:", a: "B", options: { A: "1", B: "0", C: "Nulo", D: "Verdadeiro" }, exp: "O operador OU só é verdadeiro se pelo menos um lado for verdadeiro" },
+        { q: "Formatação para String no printf:", a: "D", options: { A: "%d", B: "%f", C: "%c", D: "%s" }, exp: "%s vem de 'string', %d de 'decimal' e %f de 'float'" },
+        { q: "Operador de endereço no scanf:", a: "A", options: { A: "&", B: "*", C: "%", D: "#" }, exp: "O '&' diz ao scanf em qual endereço de memória salvar o dado" },
+        { q: "Melhor para múltiplos testes de valor exato:", a: "C", options: { A: "for", B: "while", C: "switch", D: "return" }, exp: "O switch é ideal para menus ou testes de valores constantes" },
+        { q: "Qual resolvido primeiro na precedência?", a: "A", options: { A: "Incremento (++)", B: "Atribuição (=)", C: "Multiplicação (*)", D: "Adição (+)" }, exp: "Operadores unários (++ , --) têm prioridade sobre aritméticos" }
     ];
 
     const container = document.getElementById('questions-container');
